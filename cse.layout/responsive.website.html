@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+border: 1px solid peru;
+max-width: 800px;
+margin: 0 auto;
+        }
+        h1{
+            font-size: 10vw;
+        }
+        .tiger img{
+            width: 100%;
+        }
+        .container{
+            display: flex;
+            
+        }
+        .container .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            .container .split{
+            width: 100%;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.veiwport meta tag 
+     2.css relative unit
+     3.responsive image
+     4.Body max with and margin auto
+     -->
+    <section>
+        <h1>My responsive Website</h1>
+    </section>
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="imag/tiger-Siberian.webp" alt="">
+    </section>
+    <section>
+        <h1>Two parts</h1>
+        <div class="container">
+            <div class="split">
+                <img src="imag/healty food.png" alt="">
+            </div>
+            <div class="split">
+                <img src="imag/tiger-Siberian.webp" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

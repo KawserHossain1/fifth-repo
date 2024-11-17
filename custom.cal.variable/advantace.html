@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color:red;
+            --border-color:orange;
+        }
+        h1 {
+            color: var(--main-color);
+        }
+        h2 {
+            color: var(--main-color);
+            border-color: 1px solid var(--border-color);
+        }
+        p {
+            color: var(--main-color);
+        }
+    
+        
+        .Aside,
+        .Blog{
+            float: left;
+            height: 500px;
+
+        }
+        .Aside{
+            background-color: aquamarine;
+            width: 200px;
+        }
+        .Blog{
+            background-color: tomato;
+            width: 800px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I am exploring Custom properties</h1>
+        <p>welcome my properties</p>
+    </header>
+    <main>
+        <h1>Ajke argentina match ase</h1>
+        <h2>argentina jite jabe</h2>
+        <section>
+            <aside class="Aside">
+                my side navigation
+            </aside>
+            <div class="Blog">
+               <h4>Blogs</h4>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
