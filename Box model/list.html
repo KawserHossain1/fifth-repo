@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Khabar List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .news-details {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .news-details h2 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+
+        .news-details p {
+            margin: 0;
+            color: #555;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Khabar</h1>
+        <select id="khabarSelect">
+            <option value="" selected disabled>-- Select a News Item --</option>
+            <option value="1">Global Summit 2024 Announced</option>
+            <option value="2">Tech Revolution in AI</option>
+            <option value="3">Sports Finals Around the Corner</option>
+            <option value="4">Stock Market Soars</option>
+            <option value="5">New Movie Release Breaks Records</option>
+        </select>
+
+        <div class="news-details" id="newsDetails">
+            <h2 id="newsTitle"></h2>
+            <p id="newsDescription"></p>
+        </div>
+    </div>
+
+    <script>
+        // Mock Data for News
+        const newsData = {
+            1: {
+                title: "Global Summit 2024 Announced",
+                description: "The much-awaited global summit will take place in Geneva next month.",
+            },
+            2: {
+                title: "Tech Revolution in AI",
+                description: "Major tech companies are investing heavily in AI research this year.",
+            },
+            3: {
+                title: "Sports Finals Around the Corner",
+                description: "Fans are excited as the football finals approach this weekend.",
+            },
+            4: {
+                title: "Stock Market Soars",
+                description: "Markets experience record growth after positive economic indicators.",
+            },
+            5: {
+                title: "New Movie Release Breaks Records",
+                description: "The latest action thriller has become the highest-grossing movie of the year.",
+            },
+        };
+
+        // Event Listener for Dropdown
+        document.getElementById("khabarSelect").addEventListener("change", function () {
+            const selectedValue = this.value;
+            const detailsDiv = document.getElementById("newsDetails");
+            const titleElement = document.getElementById("newsTitle");
+            const descriptionElement = document.getElementById("newsDescription");
+
+            if (selectedValue) {
+                const newsItem = newsData[selectedValue];
+                titleElement.textContent = newsItem.title;
+                descriptionElement.textContent = newsItem.description;
+                detailsDiv.style.display = "block";
+            } else {
+                detailsDiv.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

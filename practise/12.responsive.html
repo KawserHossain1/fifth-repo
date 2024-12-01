@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .food{
+            border:1px  solid skyblue;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        .food img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .food{
+                background-color: aquamarine;
+            }
+        
+        }
+        @media screen and (min-width:576px) and(max-width:992px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.food*12>img[src="healty 
+    food"]+h3{food item-$}+p{Price: \$$00}+p>lorem20 -->
+
+    <div class="container">
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-1</h3>
+            <p>Price: 100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, praesentium asperiores ab officiis obcaecati alias architecto dolores facere autem quasi reprehenderit, quas totam quibusdam eligendi animi neque, veniam repellendus cupiditate.</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-2</h3>
+            <p>Price: 200</p>
+            <p>Obcaecati quaerat, doloremque, amet illum recusandae quod possimus ratione, neque aut reprehenderit odit accusantium sunt pariatur velit. Id, eos maxime iusto a quasi inventore beatae ut provident voluptas harum voluptatibus?</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-3</h3>
+            <p>Price: 300</p>
+            <p>Voluptas soluta quos delectus, corrupti atque in similique beatae veniam quod. Voluptates repudiandae non quis laudantium qui, rerum eligendi ullam, dignissimos, aliquam nobis nam sint. Vel tempore eum sint consectetur?</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-4</h3>
+            <p>Price: 400</p>
+            <p>Nulla, quod enim! Quibusdam officia quisquam consectetur, nesciunt laborum amet eum nisi veniam aliquid ratione, placeat blanditiis. Non, in autem nihil ab, deserunt ea eligendi et molestias quam soluta quibusdam.</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-5</h3>
+            <p>Price: 500</p>
+            <p>Quidem fugit repudiandae nobis unde numquam expedita ex in dolor earum? Officiis ut ab assumenda officia dicta magnam nesciunt quos, sit deserunt quis ex ratione doloremque non omnis cum? Magni!</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-6</h3>
+            <p>Price:600</p>
+            <p>A nobis, fugit laudantium quisquam esse, dignissimos odit dolore unde vitae id delectus! Animi corporis atque, pariatur vero molestiae nam error reprehenderit voluptas iure praesentium repellendus exercitationem maiores maxime ipsum?</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-7</h3>
+            <p>Price:700</p>
+            <p>Repellendus commodi minima iste esse quibusdam! Amet deleniti veritatis rerum vero omnis magnam quia asperiores quisquam consequatur sunt hic adipisci ratione reiciendis nesciunt, dolores nihil nulla aliquam voluptatem odit quod!</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-8</h3>
+            <p>Price: 800</p>
+            <p>Facere, dolor? Quidem, ullam dolor iure quam quaerat dignissimos eos consequuntur eius, doloremque voluptatibus tenetur obcaecati iusto quia accusantium culpa! Provident praesentium dicta, aut repellendus ullam doloremque culpa! Consequatur, exercitationem.</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-9</h3>
+            <p>Price: 900</p>
+            <p>Architecto necessitatibus praesentium incidunt velit obcaecati nemo rerum ex nesciunt delectus commodi suscipit odit quas animi rem laudantium repellendus aliquid maiores, provident eius blanditiis? Quis, et. Nobis cum et tenetur!</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-10</h3>
+            <p>Price: 1000</p>
+            <p>Accusantium asperiores deserunt adipisci ex earum vel optio similique minus? Nesciunt magnam doloribus corporis error, explicabo excepturi. Dignissimos ducimus aut quis nostrum iste? Facere, ratione minus? Eius voluptatum fugit non.</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-11</h3>
+            <p>Price: 1100</p>
+            <p>Quae doloribus quas similique incidunt delectus nemo deleniti accusantium totam eligendi fuga repellendus sapiente praesentium modi dolor, dicta saepe pariatur voluptate? Quibusdam non in labore nisi, natus quasi voluptas ut.</p>
+        </div>
+        <div class="food">
+            <img src="healty food.png" alt="">
+            <h3>food item-12</h3>
+            <p>Price: 1200</p>
+            <p>Reprehenderit cumque officiis facere, delectus eos maiores soluta vero, eligendi ab aut vitae, non fugiat? Quisquam veniam error commodi consequatur dicta fuga magnam cupiditate tenetur quae, exercitationem ut odio! Aperiam!</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
